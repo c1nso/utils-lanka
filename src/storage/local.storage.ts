@@ -16,7 +16,7 @@ const LocalStorage = {
                 time = time + new Date().getTime();
 			}
 			const setValue = {
-				value,
+				value: JSON.stringify(value),
 				time
 			};
 			localStorage.setItem(key, JSON.stringify(setValue));
