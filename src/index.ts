@@ -1,12 +1,14 @@
 import Helps from './helps'
-import CookiesStorage from './storage/cookies'
+import CookieStorage from './storage/cookies'
+import LocalStorage from './storage/local.storage'
 import Validator from './middlewares/validator'
 import AlgorithmBase from './middlewares/algorithm/algorithm.base'
 import Platform from './helps/platform'
 
 export {
     Helps,
-    CookiesStorage,
+    CookieStorage,
+    LocalStorage,
     AlgorithmBase,
     Platform,
     Validator
