@@ -1,6 +1,6 @@
 {
     "name": "utils-lanka",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "common library",
     "main": "dist/utils.js",
     "typings": "dist/src/index.d.ts",
