@@ -6,3 +6,4 @@
 * 运算
 * validator
 * cookie
+* localStorage
