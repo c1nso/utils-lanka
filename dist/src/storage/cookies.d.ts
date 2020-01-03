@@ -1,4 +1,4 @@
-declare const CookiesStorage: {
+declare const CookieStorage: {
     isEnabled(): boolean;
     /**
      * 设置cookie
@@ -20,5 +20,9 @@ declare const CookiesStorage: {
      * @param name
      */
     removeCookie(name: string): void;
+    /**
+     * 清空所有cookie
+     */
+    clearCookie(): void;
 };
-export default CookiesStorage;
+export default CookieStorage;

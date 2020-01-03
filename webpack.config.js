@@ -1,7 +1,7 @@
-var path = require('path');
-var webpack = require('webpack');
-var WebpackBuildNotifierPlugin = require('webpack-build-notifier');
-var uglify = require("uglifyjs-webpack-plugin");
+const path = require('path');
+const webpack = require('webpack');
+const WebpackBuildNotifierPlugin = require('webpack-build-notifier');
+const uglify = require("uglifyjs-webpack-plugin");
 
 const PATHS = {
     src: path.join(__dirname, './src'),

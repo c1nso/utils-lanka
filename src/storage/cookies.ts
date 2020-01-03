@@ -1,6 +1,6 @@
 import Helps from "../helps";
 
-const CookiesStorage = {
+const CookieStorage = {
     isEnabled(): boolean {
         let cookieEnabled = Boolean(navigator.cookieEnabled);
         if (typeof navigator.cookieEnabled == "undefined" && !cookieEnabled){
@@ -46,6 +46,16 @@ const CookiesStorage = {
      */
     removeCookie(name: string): void {
         this.setCookie(name, '', Date.now() - 86400000);
+    },
+
+    /**
+     * 清空所有cookie
+     */
+    clearCookie(): void {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            document.cookie = cookies[i].split('=')[0] + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+        }
     }
 };
-export default CookiesStorage;
+export default CookieStorage;
